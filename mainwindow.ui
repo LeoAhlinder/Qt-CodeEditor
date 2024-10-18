@@ -50,16 +50,23 @@
      </rect>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>30</y>
-      <width>254</width>
-      <height>26</height>
+      <width>271</width>
+      <height>31</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="navbar">
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>Settings</string>
+       </property>
+      </widget>
+     </item>
      <item>
       <widget class="QPushButton" name="btnExplorer">
        <property name="font">
@@ -76,13 +83,6 @@
       <widget class="QPushButton" name="btnSearch">
        <property name="text">
         <string>Search</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton">
-       <property name="text">
-        <string>Settings</string>
        </property>
       </widget>
      </item>
