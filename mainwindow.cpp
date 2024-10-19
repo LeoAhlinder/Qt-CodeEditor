@@ -12,3 +12,10 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_btnSettings_clicked()
+{
+    QWidget *settingsWindow = new QWidget();
+    settingsWindow->show();
+}
+

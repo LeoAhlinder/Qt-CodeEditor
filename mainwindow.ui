@@ -61,7 +61,7 @@
     </property>
     <layout class="QHBoxLayout" name="navbar">
      <item>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="btnSettings">
        <property name="text">
         <string>Settings</string>
        </property>
