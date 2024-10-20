@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
+#include "settings.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -15,7 +16,6 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_btnSettings_clicked()
 {
-    QWidget *settingsWindow = new QWidget();
+    settings *settingsWindow = new settings(this);
     settingsWindow->show();
 }
-

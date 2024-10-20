@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Dialog</class>
- <widget class="QDialog" name="Dialog">
+ <class>settings</class>
+ <widget class="QDialog" name="settings">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -29,13 +29,64 @@
     <set>QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok</set>
    </property>
   </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>191</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="settingsLayout">
+    <item>
+     <layout class="QHBoxLayout" name="fontsizeLayout">
+      <item>
+       <widget class="QLabel" name="fontsizeLabel">
+        <property name="text">
+         <string>Font Size</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPlainTextEdit" name="fontSizeTextEdit"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="themeLayout">
+      <item>
+       <widget class="QLabel" name="themeLabel">
+        <property name="text">
+         <string>Theme</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="themeCombobox">
+        <item>
+         <property name="text">
+          <string>Dark</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Light</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
  </widget>
  <resources/>
  <connections>
   <connection>
    <sender>buttonBox</sender>
    <signal>accepted()</signal>
-   <receiver>Dialog</receiver>
+   <receiver>settings</receiver>
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -51,7 +102,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>rejected()</signal>
-   <receiver>Dialog</receiver>
+   <receiver>settings</receiver>
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">
